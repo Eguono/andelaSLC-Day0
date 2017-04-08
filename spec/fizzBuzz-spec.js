@@ -38,7 +38,12 @@ var myApp = require('../app/fizzBuzz.js');
     });
 
   });
-
+  
+  describe("Fizz Buzz Postive Integer Tests", function(){
+      it("should return 'Number must be greater than 0' for negative Integer", function () {
+      expect(myApp.fizzBuzz(-1)).toBe("Number must be greater than 0");
+    });
+  })
   describe("Fizz Buzz tests ", function () {
 
     it("should return `Fizz` for number divisible by 3", function () {

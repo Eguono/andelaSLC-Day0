@@ -5,6 +5,9 @@ module.exports.fizzBuzz = (num) => {
         return "Invalid Input"
     }
 
+    else if (num <= 0){
+        return "Number must be greater than 0"
+    }
     for (let i = 0; i <= num; i++) {
         if ((num % 3 === 0) && (num % 5 === 0)) {
             return "FizzBuzz";

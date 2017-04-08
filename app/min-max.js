@@ -2,7 +2,11 @@
 
 module.exports.findMinMax = (arr) => {
 
-    if (arr !== []) {
+    if(Array.isArray(arr) === false){
+        return "Invalid Input";
+    }
+    
+    else if (arr !== []) {
         let min = Math.min.apply(null, arr);
         let max = Math.max.apply(null, arr);
 
