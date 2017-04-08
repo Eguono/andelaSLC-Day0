@@ -2,7 +2,10 @@
 
 module.exports.aritGeo = (arr) => {
 
-    if (arr.length === 0) {
+    if(Array.isArray(arr) === false){
+        return "Invalid Input";
+    }
+    else if (arr.length === 0) {
         return 0;
     } else {
         let geoDifference = arr[arr.length - 1] / arr[arr.length - 2];

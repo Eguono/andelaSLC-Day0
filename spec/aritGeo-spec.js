@@ -6,6 +6,42 @@ var myApp = require('../app/aritGeo.js');
 
   describe("Determine the sequence of an array of numbers: ", function () {
 
+    describe("Case for non Array Datatype", function () {
+
+      it("should return 'Invalid Input for String Data Type'", function () {
+        expect(myApp.aritGeo("String")).toEqual("Invalid Input");
+
+      });
+
+      it("should return 'Invalid Input for Number Data Type'", function () {
+
+        expect(myApp.aritGeo(3)).toEqual("Invalid Input");
+      });
+
+      it("should return 'Invalid Input for Boolean Data Type'", function () {
+
+        expect(myApp.aritGeo(true)).toEqual("Invalid Input");
+
+        expect(myApp.aritGeo(false)).toEqual("Invalid Input");
+      });
+
+      it("should return 'Invalid Input for Null Data Type'", function () {
+
+        expect(myApp.aritGeo(null)).toEqual("Invalid Input");
+      });
+
+      it("should return 'Invalid Input for undefined Data Type'", function () {
+
+        expect(myApp.aritGeo(undefined)).toEqual("Invalid Input");
+      });
+
+      it("should return 'Invalid Input for Boolean Data Type'", function () {
+        
+        expect(myApp.aritGeo(Symbol('foo'))).toEqual("Invalid Input");
+      });
+
+    });
+
     describe("Case for an empty array", function () {
 
       it("should return 0 for an empty array", function () {

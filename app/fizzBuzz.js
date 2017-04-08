@@ -1,6 +1,9 @@
 'use strict';
 
 module.exports.fizzBuzz = (num) => {
+    if (typeof(num) !== typeof(5)){
+        return "Invalid Input"
+    }
 
     for (let i = 0; i <= num; i++) {
         if ((num % 3 === 0) && (num % 5 === 0)) {
