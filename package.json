@@ -1,0 +1,25 @@
+{
+  "name": "andelaslc-day0",
+  "version": "1.0.0",
+  "description": "Andela Labs for the Self Learning Clinic Day 0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eguono/andelaSLC-Day0.git"
+  },
+  "keywords": [
+    "Jasmine-Node"
+  ],
+  "author": "Eguonoghene Efekemo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eguono/andelaSLC-Day0/issues"
+  },
+  "homepage": "https://github.com/Eguono/andelaSLC-Day0#readme",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
